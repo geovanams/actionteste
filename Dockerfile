@@ -1,5 +1,9 @@
 # Container image that runs your code
-FROM python:3.8-alpine
+FROM debian:latest
+
+RUN apt-get update
+
+RUN apt install python3
 
 RUN pip install requests
 
