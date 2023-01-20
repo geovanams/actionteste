@@ -1,11 +1,11 @@
 # Container image that runs your code
-FROM debian:latest
+FROM ubuntu:latest
 
-RUN apt-get update
+RUN sudo apt-get update
 
-RUN apt install python3
+RUN sudo apt install python3
 
-RUN pip install requests
+RUN sudo pip install requests
 
 COPY main.py /main.py
 
