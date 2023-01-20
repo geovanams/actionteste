@@ -1,11 +1,11 @@
 # Container image that runs your code
 FROM ubuntu:latest
 
-RUN sudo apt-get update
+RUN apt-get update --force
 
-RUN sudo apt install python3
+RUN apt install python3 --force
 
-RUN sudo pip install requests
+RUN pip install requests --force
 
 COPY main.py /main.py
 
