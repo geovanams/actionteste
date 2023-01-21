@@ -5,4 +5,4 @@ COPY main.py /app/
 
 WORKDIR /app
 
-CMD ["python", "main.py"]
+ENTRYPOINT ["python", "main.py"]
