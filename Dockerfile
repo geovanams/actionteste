@@ -1,8 +1,8 @@
 # Container image that runs your code
-FROM python:3.8-slim-buster
+FROM python:3.8-alpine
 
-COPY main.py /app/
+RUN pip install requests
 
-WORKDIR /app
+COPY main.py /main.py
 
-ENTRYPOINT ["python", "main.py"]
+CMD ["python", "/main.py"]
