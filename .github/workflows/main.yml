@@ -7,7 +7,6 @@ jobs:
     steps:
       - name: Hello world action step
         id: hello
-        uses: geovanams/actionteste@v1.1.2
+        uses: geovanams/actionteste@v1.1.7
         with:
-          who-to-greet: 'Mona the Octocat'
-      # Use the output from the `hello` step
+          name: 'Mona the Octocat'
