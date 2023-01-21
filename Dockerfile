@@ -1,12 +1,8 @@
 # Container image that runs your code
-FROM ubuntu:latest
+FROM python:3.8-slim-buster
 
-RUN apt-get update --force
+COPY main.py /app/
 
-RUN apt install python3 --force
-
-RUN pip install requests --force
-
-COPY main.py /main.py
+WORKDIR /app
 
 CMD ["python", "main.py"]
