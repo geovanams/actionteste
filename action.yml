@@ -10,6 +10,5 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - main.py
     - --name
     - ${{ inputs.name }}
