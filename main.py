@@ -23,5 +23,10 @@ import os
 # for v in objeto:
 #     print(v['name'])
 
-print("oi")
+import argparse
 
+parser = argparse.ArgumentParser()
+parser.add_argument('--name', type=str, help='Name of the user')
+args = parser.parse_args()
+
+print(f'Hello, {args.name}!')
