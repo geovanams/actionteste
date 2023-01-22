@@ -2,12 +2,15 @@
 name: 'Hello World-geovanamsteste'
 description: 'Greet someone and record the time'
 inputs:
-  name:  # id of input
-    description: 'Who to greet'
+  owner:  # id of input
+    description: 'YOUR_GITHUB_USERNAME'
     required: true
-    default: 'World'
+  repos:
+    description: 'YOUR_REPOS_NAME'
+    required: true
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ inputs.name }}
+    - ${{ inputs.owner }}
+    - ${{ inputs.repos }}
