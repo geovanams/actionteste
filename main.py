@@ -10,7 +10,6 @@ objeto = json.loads(obj)
 print("\n"+sys.argv[2]+ " repo branches:")
 for v in objeto:
     print(v)
-    print(v['name'])
 
 print("\nBranches Details:")
 json_formatted_str = json.dumps(objeto, indent=2)
