@@ -9,4 +9,5 @@ jobs:
         id: hello
         uses: geovanams/actionteste@v2.1.1
         with:
-          name: 'Mona the Octocat'
+          owner: 'geovanams'
+          repos: 'List-Branch-Docker-Action'
