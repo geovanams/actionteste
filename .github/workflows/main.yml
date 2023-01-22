@@ -7,6 +7,6 @@ jobs:
     steps:
       - name: Hello world action step
         id: hello
-        uses: geovanams/actionteste@v1.1.9
+        uses: geovanams/actionteste@v1.1.10
         with:
           name: 'Mona the Octocat'
