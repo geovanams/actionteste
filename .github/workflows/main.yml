@@ -1,13 +1,13 @@
 on: [workflow_dispatch]
 
 jobs:
-  hello_world_job:
+  List-Branches:
     runs-on: ubuntu-latest
-    name: A job to say hello
+    name: A job to List GitHub Repos Branches
     steps:
-      - name: Hello world action step
-        id: hello
-        uses: geovanams/actionteste@v2.1.1
+      - name: List Branches action step
+        id: list
+        uses: geovanams/actionteste@v2.1.2
         with:
           owner: 'geovanams'
           repos: 'List-Branch-Docker-Action'
