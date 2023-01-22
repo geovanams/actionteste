@@ -17,5 +17,5 @@ runs:
   args:
     - ${{ inputs.owner }}
     - ${{ inputs.repos }}
-    - ${{ inputs.acess-token }}
+    - ${{ inputs.access-token }}
     
