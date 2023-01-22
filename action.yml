@@ -3,10 +3,13 @@ name: 'Hello World-geovanamsteste'
 description: 'Greet someone and record the time'
 inputs:
   owner:  # id of input
-    description: 'YOUR_GITHUB_USERNAME'
+    description: 'your github username'
     required: true
   repos:
-    description: 'YOUR_REPOS_NAME'
+    description: 'your repos name'
+    required: true
+  access-token: 
+    description: 'your user token'
     required: true
 runs:
   using: 'docker'
@@ -14,3 +17,5 @@ runs:
   args:
     - ${{ inputs.owner }}
     - ${{ inputs.repos }}
+    - ${{ inputs.acess-token }}
+    
