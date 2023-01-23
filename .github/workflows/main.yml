@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: List Branches action step
         id: list
-        uses: geovanams/actionteste@latest
+        uses: geovanams/actionteste@master
         with:
           owner: 'geovanams'
           repos: 'List-Branch-Docker-Action'
