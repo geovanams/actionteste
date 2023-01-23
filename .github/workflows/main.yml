@@ -11,3 +11,4 @@ jobs:
         with:
           owner: 'geovanams'
           repos: 'List-Branch-Docker-Action'
+          access-token: ${{ secrets.ACCESS_TOKEN }}
