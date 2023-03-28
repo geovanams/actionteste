@@ -1,6 +1,9 @@
 # action.yml
 name: 'Hello World-geovanamsteste'
 description: 'Greet someone and record the time'
+branding:
+  icon: 'git-branch'
+  color: 'blue'
 inputs:
   owner:  # id of input
     description: 'your github username'
