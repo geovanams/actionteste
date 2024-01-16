@@ -5,7 +5,7 @@ branding:
   icon: 'git-branch'
   color: 'blue'
 inputs:
-  owner:  # id of input
+  owner:  # id of input1
     description: 'your github username'
     required: true
   repos:
