@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to List GitHub Repos Branches
     steps:
-      - name: List Branches action step
+      - name: List Branches action stepp
         id: list
         uses: geovanams/actionteste@master
         with:
